@@ -8,7 +8,7 @@ html
         = title
       = ' - '
       = APP_NAME
-    //link(href='https://fonts.googleapis.com/css?family=Andada|Lato' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Roboto|Droid+Slab' rel='stylesheet')
     link(href='/frontend.css'  rel='stylesheet' type='text/css')
   body
 
@@ -22,8 +22,11 @@ html
         block content
 
     footer.container.mt-3
-      p.text-muted.float-md-right
-        small &copy; 2016
+      p.text-muted.float-right
+        small
+          | &copy; 2017
+          = ' '
+          = APP_NAME
 
     script(src='/frontend.js')
 
